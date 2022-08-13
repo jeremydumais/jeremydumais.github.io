@@ -1,0 +1,8 @@
+{%- assign site = include.site -%}
+
+<ul class="social-media-list" style="{{ include.style }}">
+    <li><a rel="me" href="https://github.com/{{ site.github_username }}" target="_blank" title="{{ site.github_username }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a></li>
+    <li><a rel="me" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="{{ site.linkedin_username }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a></li>
+    <li><a rel="me" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="{{ site.twitter_username }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg></a></li>
+    <li><a rel="me" href="https://t.me/{{ site.telegram_username }}" target="_blank" title="{{ site.telegram_username }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#telegram' | relative_url }}"></use></svg></a></li>
+</ul>
