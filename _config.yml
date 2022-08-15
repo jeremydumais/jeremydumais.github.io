@@ -41,6 +41,7 @@ remote_theme: jekyll/minima
 minima:
   skin: dark
 header_pages:
+  - news.markdown
   - blog.markdown
   - projects.markdown
   - about.markdown
