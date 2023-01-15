@@ -9,7 +9,7 @@ layout: home
 Welcome to Jed# Software. Our mission? Provide free and open source software.
 
 
-## Latest news
+## Latest news :newspaper:
 
 - **Jan 15, 2023**: Completed the Single Linked List in the [Study the RoadMap 
 of Computer Science](https://github.com/jeremydumais/Study_RoadMap_ComputerScience)
@@ -68,5 +68,5 @@ version 0.2.2.
 version 0.2.1.
 
 
-## Latest Blog posts
+## Latest Blog posts :green_book:
 
