@@ -78,7 +78,7 @@ Everything is configurable: schools, classes, students, test types, subjects etc
     <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
 </a>
 
-### Challenge 2023 - Study the RoadMap of Computer Science <img src="/assets/gologo.png" style="margin-left:10px" title="Go" />
+### Challenge 2023 - RoadMap of Computer Science <img src="/assets/gologo.png" style="margin-left:10px" title="Go" />
 
 I gave myself a challenge in 2023. I will review/learn and practice different 
 concepts by following the https://roadmap.sh/computer-science/
