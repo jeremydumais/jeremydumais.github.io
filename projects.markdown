@@ -78,6 +78,21 @@ Everything is configurable: schools, classes, students, test types, subjects etc
     <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
 </a>
 
+### Challenge 2023 - Study the RoadMap of Computer Science <img src="/assets/gologo.png" style="margin-left:10px" title="Go" />
+
+I gave myself a challenge in 2023. I will review/learn and practice different 
+concepts by following the https://roadmap.sh/computer-science/
+
+I will investigate and implement each concept contained in the road map when
+possible.
+
+To add a little spice I will take the opportunity to learn the GO language.
+
+<a rel="me" href="https://github.com/{{ site.github_username }}/Study_RoadMap_ComputerScience" target="_blank" title="{{ site.github_username }}/Study_RoadMap_ComputerScience">
+    More details on Github
+    <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+</a>
+
 #### and more... 
 
 See my github to the complete list of projects : 
