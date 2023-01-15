@@ -9,12 +9,12 @@ layout: home
 Welcome to Jed# Software. Our mission? Provide free and open source software.
 
 
-## Latest news
+## Latest news :newspaper:
 
-- **Jan 15, 2023**: Completed the Single Linked List in the [Study the RoadMap 
+- :calendar: **Jan 15, 2023**: Completed the Single Linked List in the [Study the RoadMap 
 of Computer Science](https://github.com/jeremydumais/Study_RoadMap_ComputerScience)
 (Challenge 2023). See my github repo for more details.
-- **Dec 31, 2022**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
+- :calendar: **Dec 31, 2022**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
 version 1.1.5
     - New features
         - Added OpenSSL variables in CMakeLists to be able to specify include,
@@ -36,7 +36,7 @@ version 1.1.5
     - Security fixes
         - Replaced all insecure strcpy by functions that support length arguments like
         strncpy.
-- **Jul 15, 2022**: Released [The Warrior](https://github.com/jeremydumais/TheWarrior)
+- :calendar: **Jul 15, 2022**: Released [The Warrior](https://github.com/jeremydumais/TheWarrior)
 version 0.2.0. 
     - Game
         - New features
@@ -61,12 +61,12 @@ version 0.2.0.
                 - Added the Edit, View and Clear Blocked Border Mode features.
             - Bug fixes
                 - Fix an issue where the initShader method of the GLTextService and GLTileService was not returning any value on success.
-- **Mar 9, 2022**: Released [BeaverTodos](https://github.com/jeremydumais/BeaverTodos)
+- :calendar: **Mar 9, 2022**: Released [BeaverTodos](https://github.com/jeremydumais/BeaverTodos)
 version 0.2.2.
     - Fix an issuse where you couldn't close a todo if a completed todo had the same id.
-- **Mar 2, 2022**: Released [BeaverTodos](https://github.com/jeremydumais/BeaverTodos)
+- :calendar: **Mar 2, 2022**: Released [BeaverTodos](https://github.com/jeremydumais/BeaverTodos)
 version 0.2.1.
 
 
-## Latest Blog posts
+## Latest Blog posts :green_book:
 

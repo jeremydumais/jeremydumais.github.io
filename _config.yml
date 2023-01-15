@@ -35,6 +35,7 @@ linkedin_username: jeremy-dumais-12996b23
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jemoji
 
 remote_theme: jekyll/minima
 
