@@ -11,7 +11,10 @@ Welcome to Jed# Software. Our mission? Provide free and open source software.
 
 ## Latest news :newspaper:
 
-- :calendar: **Jan 15, 2023**: Completed the Single Linked List in the [Study the RoadMap 
+- :calendar: **Jan 22, 2023**: Completed the Double Linked List in the [Study the RoadMap
+of Computer Science](https://github.com/jeremydumais/Study_RoadMap_ComputerScience)
+(Challenge 2023). See my github repo for more details.
+- :calendar: **Jan 15, 2023**: Completed the Single Linked List in the [Study the RoadMap
 of Computer Science](https://github.com/jeremydumais/Study_RoadMap_ComputerScience)
 (Challenge 2023). See my github repo for more details.
 - :calendar: **Dec 31, 2022**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
@@ -37,7 +40,7 @@ version 1.1.5
         - Replaced all insecure strcpy by functions that support length arguments like
         strncpy.
 - :calendar: **Jul 15, 2022**: Released [The Warrior](https://github.com/jeremydumais/TheWarrior)
-version 0.2.0. 
+version 0.2.0.
     - Game
         - New features
             - Added GLTextBox support to display messages in the game.

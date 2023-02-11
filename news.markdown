@@ -4,7 +4,10 @@ title: News
 permalink: /news/
 ---
 
-- :calendar: **Jan 15, 2023**: Completed the Single Linked List in the [Study the RoadMap 
+- :calendar: **Jan 22, 2023**: Completed the Double Linked List in the [Study the RoadMap
+of Computer Science](https://github.com/jeremydumais/Study_RoadMap_ComputerScience)
+(Challenge 2023). See my github repo for more details.
+- :calendar: **Jan 15, 2023**: Completed the Single Linked List in the [Study the RoadMap
 of Computer Science](https://github.com/jeremydumais/Study_RoadMap_ComputerScience)
 (Challenge 2023). See my github repo for more details.
 - :calendar: **Dec 31, 2022**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
@@ -30,7 +33,7 @@ version 1.1.5
         - Replaced all insecure strcpy by functions that support length arguments like
         strncpy.
 - :calendar: **Jul 15, 2022**: Released [The Warrior](https://github.com/jeremydumais/TheWarrior)
-version 0.2.0. 
+version 0.2.0.
     - Game
         - New features
             - Added GLTextBox support to display messages in the game.
@@ -69,13 +72,13 @@ version 0.2.0.
     - Added the Fetch the details of a todo feature.
     - Added the usage when no command is supplied
 - :calendar: **Feb 6, 2022**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library) version 1.1.4.
-    - Added the BUILD_TESTING flag in the CMake project so the unit tests are not build by default 
+    - Added the BUILD_TESTING flag in the CMake project so the unit tests are not build by default
     and Google Test is no longer required.
     - Added a new uninstall target in the CMake project.
-    - Added a new ErrorResolver class to get a string representation (error message) of a return 
+    - Added a new ErrorResolver class to get a string representation (error message) of a return
     code obtained by the sendMail method from the different classes of SMTP clients.
-    - Two new methods has been added to the SMTPClientBase class : getErrorMessage and 
-    getErrorMessage_r. Those two methods can be used to get a string representation (error message) 
+    - Two new methods has been added to the SMTPClientBase class : getErrorMessage and
+    getErrorMessage_r. Those two methods can be used to get a string representation (error message)
     of a return code obtained by the sendMail method from the different classes of SMTP clients.
     - The Google Test dependency branch has been switched from master to main.
     - Code: The using namespace std; has been removed as it is considered bad practice.
@@ -83,10 +86,10 @@ version 0.2.0.
     - Added documentation in all headers files for public methods.
     - The exception classes AttachmentError and CommunicationError has been removed.
 - :calendar: **Aug 1, 2021**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library) version 1.1.3.
-    - Renamed the class SSLSmtpClient to OpportunisticSecureSMTPClient but added a typedef and kept 
+    - Renamed the class SSLSmtpClient to OpportunisticSecureSMTPClient but added a typedef and kept
     the sslsmtpclient.h for backward compatibility.
     - Added support for forced ssl connection (SMTP port 465) via the ForcedSecureSMTPClient class
-    - Added the new base class SecureSMTPClientBase to centralize the common code of the classes 
+    - Added the new base class SecureSMTPClientBase to centralize the common code of the classes
     ForcedSecureSMTPClient and OpportunisticSecureSMTPClient.
 - :calendar: **May 27, 2021**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library) version 1.1.2.
     - Refactored the code of the SmtpClient class to inherit the SmtpClientBase class.
