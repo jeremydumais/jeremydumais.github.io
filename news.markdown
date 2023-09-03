@@ -4,6 +4,12 @@ title: News
 permalink: /news/
 ---
 
+- :calendar: **Sep 3, 2023**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
+version 1.1.6
+    - New features
+        - Added support in the attachment class for Content-ID. It will be
+        really useful to uniquely identify and reference resources to embed in
+        the message.
 - :calendar: **Jan 22, 2023**: Completed the Double Linked List in the [Study the RoadMap
 of Computer Science](https://github.com/jeremydumais/Study_RoadMap_ComputerScience)
 (Challenge 2023). See my github repo for more details.
