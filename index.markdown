@@ -6,11 +6,23 @@ layout: home
 
 ---
 
-Welcome to Jed# Software. Our mission? Provide free and open source software.
+Welcome to Jed# Software. My mission? Provide free and open source software.
 
 
 ## Latest news :newspaper:
 
+- :calendar: **Jan 3, 2024**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
+version 1.1.7
+    - New features
+        - Added support for the XOAUTH2 authentication method.
+        - Added a new flag in the different SMTP client classes to indicate whether we
+want to send emails in batch (getBatchMode/setBatchMode). In this mode the connection to an
+SMTP server will only be made once when the first email is sent and will
+remain open until the client instance is destroy.
+        - Added the authentication feature on the SMTPClient class.
+        - Added a new flag on the ForcedSecureSMTPClient and OpportunisticSecureSMTPClient
+to indicate whether we accept self signed certificate
+(getAcceptSelfSignedCert/setAcceptSelfSignedCert).
 - :calendar: **Sep 3, 2023**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
 version 1.1.6
     - New features
@@ -76,6 +88,7 @@ version 0.2.2.
 - :calendar: **Mar 2, 2022**: Released [BeaverTodos](https://github.com/jeremydumais/BeaverTodos)
 version 0.2.1.
 
+<hr style="border: 1px solid #333333"/>
 
 ## Latest Blog posts :green_book:
 
