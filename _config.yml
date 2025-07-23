@@ -27,12 +27,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jeremydumais
 github_username:  jeremydumais
 telegram_username: jeremydumais
-linkedin_username: jeremy-dumais-12996b23
+linkedin_username: jeremy-dumais
 
 # Build settings
 
 # theme: minima
-remote_theme: "jekyll/minima@2e9c7c0"
+remote_theme: "jekyll/minima"
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
@@ -43,11 +43,14 @@ minima:
   social_links:
     - { platform: github,  user_url: "https://github.com/jeremydumais" }
     - { platform: twitter, user_url: "https://twitter.com/jeremydumais" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/jeremy-dumais" }
+    - { platform: telegram, user_url: "#" }
 header_pages:
   - news.markdown
   - blog.markdown
   - projects.markdown
   - about.markdown
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
