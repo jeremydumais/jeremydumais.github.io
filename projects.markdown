@@ -25,14 +25,15 @@ An RPG game developped in C++ with SDL2.
 
 Still in development...
 
-The current version 0.2 include 
+The current version 0.3.3 include
 - the game rendering engine with 2 basic maps
 - a Map Editor
 - an Item Editor
+- a Monster Editor
 - the player inventory
 - the player character panel
 
-The version 0.3 currently in development will include the monster editor and the game battle system.
+The version 0.3.4 currently in development will include the game battle system.
 
 <a rel="me" href="https://github.com/{{ site.github_username }}/TheWarrior" target="_blank" title="{{ site.github_username }}/TheWarrior">
     More details on Github
@@ -52,7 +53,7 @@ You can of course add, edit and remove todos but also print them in priority ord
 
 ### C++ DateTime Library <img src="/assets/cpplogo.png" style="margin-left:10px" title="C++" />
 
-C++ DateTime Library is a lightweight librairy built in C++ to manage dates and time. 
+C++ DateTime Library is a lightweight librairy built in C++ to manage dates and time.
 
 <blockquote>
 I wanted to offer a simple way to manage dates and time in C++ without having to deal with a complex framwork.
@@ -80,7 +81,7 @@ Everything is configurable: schools, classes, students, test types, subjects etc
 
 ### Challenge 2023 - RoadMap of Computer Science <img src="/assets/gologo.png" style="margin-left:10px" title="Go" />
 
-I gave myself a challenge in 2023. I will review/learn and practice different 
+I gave myself a challenge in 2023. I will review/learn and practice different
 concepts by following the https://roadmap.sh/computer-science/
 
 I will investigate and implement each concept contained in the road map when
@@ -93,7 +94,7 @@ To add a little spice I will take the opportunity to learn the GO language.
     <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
 </a>
 
-#### and more... 
+#### and more...
 
-See my github to the complete list of projects : 
+See my github to the complete list of projects :
 <a href="https://github.com/jeremydumais" target="_blank">https://github.com/jeremydumais</a>

@@ -1,20 +1,15 @@
 ---
-layout: default
+layout: page
 title: Blog posts
 permalink: /blog/
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
     {% assign posts = site.posts %}
   {% endif %}
-
 
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
@@ -25,11 +20,11 @@ permalink: /blog/
       {%- for post in posts -%}
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
+        <p>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-        </h3>
+        </p>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}

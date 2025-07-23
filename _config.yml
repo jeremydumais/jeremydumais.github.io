@@ -32,15 +32,17 @@ linkedin_username: jeremy-dumais-12996b23
 # Build settings
 
 # theme: minima
+remote_theme: "jekyll/minima@2e9c7c0"
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jemoji
 
-remote_theme: jekyll/minima
-
 minima:
   skin: dark
+  social_links:
+    - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
+    - { platform: twitter, user_url: "https://twitter.com/jekyllrb" }
 header_pages:
   - news.markdown
   - blog.markdown
