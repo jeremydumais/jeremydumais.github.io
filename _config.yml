@@ -41,8 +41,8 @@ plugins:
 minima:
   skin: dark
   social_links:
-    - { platform: github,  user_url: "https://github.com/jekyll/jekyll" }
-    - { platform: twitter, user_url: "https://twitter.com/jekyllrb" }
+    - { platform: github,  user_url: "https://github.com/jeremydumais" }
+    - { platform: twitter, user_url: "https://twitter.com/jeremydumais" }
 header_pages:
   - news.markdown
   - blog.markdown
