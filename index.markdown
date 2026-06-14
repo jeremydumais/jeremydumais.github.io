@@ -1,108 +1,75 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
-
 ---
 
-Welcome to Jed# Software. My mission? Provide free and open source software.
+<section class="home-hero">
+  <div>
+    <div class="eyebrow"><h4>Free and open source software</h4></div><br />
+    <p class="home-hero__copy">
+      I build practical developer tools, C++ libraries, command-line utilities, and the occasional RPG engine experiment. The mission is simple: useful software, open source, and documented enough for the next person to keep moving.
+    </p>
+    <br/>
+    <div class="home-hero__actions">
+      <a class="button-link" href="/projects/">Explore projects</a>
+      <a class="button-link button-link--ghost" href="/blog/">Read the blog</a>
+    </div>
+  </div>
 
+  <aside class="signal-panel">
+    <div class="signal-panel__label">Latest update</div>
+    <span class="signal-panel__value">{{ site.data.news.first.date | date: "%b %-d" }}</span>
+    <p class="signal-panel__note">{{ site.data.news.first.title }}</p>
+  </aside>
+</section>
 
-## Latest news :newspaper:
+<section class="quick-grid" aria-label="Site highlights">
+  <div class="quick-card">
+    <h2>C++ libraries</h2>
+    <p>Lightweight libraries for email, date/time work, and system-level learning.</p>
+  </div>
+  <div class="quick-card">
+    <h2>Tools</h2>
+    <p>Terminal apps and editor utilities built around practical workflows.</p>
+  </div>
+  <div class="quick-card">
+    <h2>Writing</h2>
+    <p>Notes from real implementation work with C++, Go, Linux, Azure, and debugging.</p>
+  </div>
+</section>
 
-- :calendar: **Jul 23, 2025**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
-version 1.1.11
-    - New features
-        - Adjust the line length of the MIME attachments to 76 (excluding CRLF)
-        to comply with RFC 2045.
-        - Add a log level to the multiple clients. The log level is for the
-        level of details of the communication log between the client and the
-        server. Choices are : None, ExcludeAttachmentsBytes and Full. Default
-        is ExcludeAttachmentsBytes.
-        - Add the Date header field in outgoing emails to comply with RFC 2822.
-        This is a required field and it was missing in the previous versions.
-    - Bug fixes
-        - Fix the error 554 5.0.0 ("failed to create parser: unexpected EOF")
-        when sending multipart messages via ProtonMail Bridge due to missing
-        closing MIME boundary (--sep--).
-        - Prevented catastrophic backtracking in isEmailAddressValid() regex
-        that caused crashes when validating complex email addresses (e.g.,
-        from mailersend.com). Updated regex to avoid unescaped dots and added a
-        more robust pattern.
-- :calendar: **Jul 6, 2025**: Released [The Warrior](https://github.com/jeremydumais/TheWarrior)
-version 0.3.3.
-    - Map Editor
-        - Changes
-            - Move the editor configuration file into the folder "Jed#
-            Software/The Warrior - Map Editor" instead of "The Warrior - Map
-            Editor"
-            - Only the tiles that are visible on the screen are now displayes.
-            This result in lower CPU usage.
-        - New features
-            - Persist the position status of toolbars.
-            - Persist the visibility status of toolbars.
-            - Persist the visiblity status of the display grid menu item.
-            - Add a shortcut to move the map -> Alt + Click.
-            - Enable the zoom feature with the mouse wheel.
-            - Implement the undo/redo actions.
-            - Add a Picker tool to get a texture an object from a tile.
-            - Add support to change multi-selection tile properties.
-            - Add bottom tabs to change the map view (ex: CanStep, MonsterZone,
-            BlockedBorder etc).
-            - Persist the "Use only one monster zone for all the map" field in
-            the GameMap class.
-            - Add a MonsterZone selection component in the Tile Property panel.
-            - Disable the MonsterZone combobox in tile props component when "Use
-            only one monster zone for all the map" is selected.
-            - Implement the copy/paste of tiles feature.
-        - Bug fixes
-            - Solved Issue #6: Application crash when you multiselect a zone
-            that ends outside of the GLComponent.
-            - Solved Issue #14: When creating the first monster zone, it is
-            assigned automatically to the selected tiles.
-            - Solved Issue #15: Undo history is not update when we change tile
-            value via the Tile Property panel.
-            - Solved Issue #13: Application crash when you apply texture on map
-            then same on another file.
-            - Solved Issue #9: Unable to select a tile when the map is moved in
-            the lower right corner.
-    - Item Editor
-        - Changes
-            - Move the editor configuration file into the folder "Jed#
-            Software/The Warrior - Item Editor" instead of "The Warrior - Item
-            Editor"
-    - Monster Editor
-        - Changes
-            - Move the editor configuration file into the folder "Jed#
-            Software/The Warrior - Monster Editor" instead of "The Warrior -
-            Monster Editor"
-- :calendar: **May 23, 2025**: [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
-is now on [Conan](https://conan.io/center/recipes/cpp-smtpclient-library)! :partying_face:
-- :calendar: **Apr 19, 2025**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
-version 1.1.10
-    - New features
-        - Add support for macOS.
-    - Bug fixes
-        - Fix the install/uninstall process of the library.
-        - Solve the issue #38 where STARTTLS is not recognized if it is returned
-        as the last response from the mail server.
-- :calendar: **Mar 30, 2025**: Released [C++ SMTP Client Library](https://github.com/jeremydumais/CPP-SMTPClient-library)
-version 1.1.9
-    - New features
-        - Rework the build system to support static build and to generate
-        correct release version.
-        - The build configuration now works with multi-config generators like
-        Visual Studio.
-        - The default build configurations in Visual Studio has been changed to :
-            - x64-Debug
-            - x64-Debug-Static
-            - x64-Debug-WithUnitTests
-            - x64-Release
-            - x64-Release-Static
-            - x64-Release-WithUnitTests
+<section>
+  <div class="section-header">
+    <div>
+      <div class="eyebrow">Activity</div>
+      <h2>Latest news</h2>
+      <p>Recent releases, package updates, project milestones, and new articles.</p>
+    </div>
+    <div class="section-header__actions">
+      <a class="button-link button-link--ghost" href="/news/">All news</a>
+    </div>
+  </div>
 
-<hr style="border: 1px solid #333333"/>
+  {% include news-list.html limit=5 compact=true %}
+</section>
 
-## Latest Blog posts :green_book:
+<section>
+  <div class="section-header">
+    <div>
+      <div class="eyebrow">Notes</div>
+      <h2>Latest blog posts</h2>
+    </div>
+    <div class="section-header__actions">
+      <a class="button-link button-link--ghost" href="/blog/">All posts</a>
+    </div>
+  </div>
 
+  <div class="post-preview-grid">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {%- for post in site.posts limit:4 -%}
+      <article class="post-preview">
+        <span class="post-preview__date">{{ post.date | date: date_format }}</span>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+      </article>
+    {%- endfor -%}
+  </div>
+</section>

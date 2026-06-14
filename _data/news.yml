@@ -1,0 +1,211 @@
+- date: 2026-06-14
+  category: Blog
+  title: Azure Function - Accessing a Local API with Hybrid Connections on Linux
+  url: /azure/2026/06/14/Azure-Function-HCM-Linux.html
+  summary: A new walkthrough on using Azure Hybrid Connections to let a Linux Azure Function reach a private local API.
+
+- date: 2025-07-23
+  category: Release
+  title: C++ SMTP Client Library 1.1.11
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: MIME, logging, and mail-header improvements, plus fixes for multipart delivery and email validation edge cases.
+  details:
+    - title: New features
+      items:
+        - Adjust MIME attachment line length to 76 characters, excluding CRLF, to comply with RFC 2045.
+        - Add client communication log levels: None, ExcludeAttachmentsBytes, and Full.
+        - Add the Date header field to outgoing emails to comply with RFC 2822.
+    - title: Bug fixes
+      items:
+        - Fix ProtonMail Bridge multipart messages by adding the missing closing MIME boundary.
+        - Prevent catastrophic backtracking in email address validation.
+
+- date: 2025-07-06
+  category: Release
+  title: The Warrior 0.3.3
+  project: The Warrior
+  url: https://github.com/jeremydumais/TheWarrior
+  summary: A substantial editor release with persistent toolbar state, zoom, undo/redo, tile tools, and several stability fixes.
+  details:
+    - title: Map Editor
+      items:
+        - Move editor configuration into the Jed# Software application folder.
+        - Render only visible tiles to reduce CPU usage.
+        - Persist toolbar position and visibility.
+        - Add grid visibility persistence, Alt + Click map movement, mouse-wheel zoom, undo/redo, picker tool, multi-selection tile edits, bottom map-view tabs, monster-zone controls, and tile copy/paste.
+        - Fix several crashes and selection-history issues reported in Issues #6, #9, #13, #14, and #15.
+    - title: Item Editor
+      items:
+        - Move editor configuration into the Jed# Software application folder.
+    - title: Monster Editor
+      items:
+        - Move editor configuration into the Jed# Software application folder.
+
+- date: 2025-05-23
+  category: Package
+  title: C++ SMTP Client Library is now on Conan
+  project: C++ SMTP Client Library
+  url: https://conan.io/center/recipes/cpp-smtpclient-library
+  summary: The library is available from Conan Center, making it easier to consume from C++ projects.
+
+- date: 2025-04-19
+  category: Release
+  title: C++ SMTP Client Library 1.1.10
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: macOS support and install/uninstall improvements, with a STARTTLS parsing fix.
+  details:
+    - title: New features
+      items:
+        - Add support for macOS.
+    - title: Bug fixes
+      items:
+        - Fix the install and uninstall process.
+        - Solve Issue #38 where STARTTLS was not recognized when returned as the last mail-server response.
+
+- date: 2025-03-30
+  category: Release
+  title: C++ SMTP Client Library 1.1.9
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: Build-system updates for static builds, release versions, multi-config generators, and Visual Studio defaults.
+  details:
+    - title: New features
+      items:
+        - Rework the build system to support static builds and correct release versions.
+        - Support multi-config generators such as Visual Studio.
+        - Update default Visual Studio configurations for debug, release, static, and unit-test builds.
+
+- date: 2024-06-08
+  category: Release
+  title: C++ SMTP Client Library 1.1.8
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: Better EHLO handling for servers that send extensions in multiple buffers, plus RFC-compliant recipient headers.
+
+- date: 2024-01-03
+  category: Release
+  title: C++ SMTP Client Library 1.1.7
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: XOAUTH2, batch sending, SMTPClient authentication, and self-signed certificate options for secure clients.
+
+- date: 2023-11-10
+  category: Release
+  title: The Warrior 0.3.2
+  project: The Warrior
+  url: https://github.com/jeremydumais/TheWarrior
+  summary: A Map Editor usability release with movable toolbars, dynamic map sizing, zoom, component cleanup, and Issue #10 fixed.
+
+- date: 2023-10-11
+  category: Release
+  title: The Warrior 0.3.1
+  project: The Warrior
+  url: https://github.com/jeremydumais/TheWarrior
+  summary: Monster-zone assignment, selection fixes, and CLI loading support for Monster Editor and Item Editor.
+
+- date: 2023-09-23
+  category: Release
+  title: The Warrior 0.3.0
+  project: The Warrior
+  url: https://github.com/jeremydumais/TheWarrior
+  summary: Gold stats, item and monster store settings, monster zones, and the first Monster Editor.
+
+- date: 2023-09-03
+  category: Release
+  title: C++ SMTP Client Library 1.1.6
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: Adds Content-ID support for attachments, useful for identifying and embedding message resources.
+
+- date: 2023-01-22
+  category: Challenge
+  title: Double Linked List completed
+  project: Study the RoadMap of Computer Science
+  url: https://github.com/jeremydumais/Study_RoadMap_ComputerScience
+  summary: Completed the Double Linked List exercise in the 2023 Computer Science roadmap challenge.
+
+- date: 2023-01-15
+  category: Challenge
+  title: Single Linked List completed
+  project: Study the RoadMap of Computer Science
+  url: https://github.com/jeremydumais/Study_RoadMap_ComputerScience
+  summary: Completed the Single Linked List exercise in the 2023 Computer Science roadmap challenge.
+
+- date: 2022-12-31
+  category: Release
+  title: C++ SMTP Client Library 1.1.5
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: OpenSSL CMake variables, a pure C++ API, formatting, timeout behavior, communication-log growth, and security hardening.
+
+- date: 2022-07-15
+  category: Release
+  title: The Warrior 0.2.0
+  project: The Warrior
+  url: https://github.com/jeremydumais/TheWarrior
+  summary: Game UI windows, inventory and character panels, joystick support, Item Editor, and several Map Editor additions.
+
+- date: 2022-03-09
+  category: Release
+  title: BeaverTodos 0.2.2
+  project: BeaverTodos
+  url: https://github.com/jeremydumais/BeaverTodos
+  summary: Fixes an issue where a todo could not be closed if a completed todo had the same id.
+
+- date: 2022-03-02
+  category: Release
+  title: BeaverTodos 0.2.1
+  project: BeaverTodos
+  url: https://github.com/jeremydumais/BeaverTodos
+  summary: Fixes a bug where the terminal text color was not reset for the next line.
+
+- date: 2022-03-01
+  category: Release
+  title: BeaverTodos 0.2.0
+  project: BeaverTodos
+  url: https://github.com/jeremydumais/BeaverTodos
+  summary: Adds remove, edit, purge, next-todo, detail-fetching, and default usage output.
+
+- date: 2022-02-06
+  category: Release
+  title: C++ SMTP Client Library 1.1.4
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: Testing/build improvements, uninstall support, error-message helpers, documentation updates, and API cleanup.
+
+- date: 2021-08-01
+  category: Release
+  title: C++ SMTP Client Library 1.1.3
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: Renames SSLSmtpClient to OpportunisticSecureSMTPClient, adds forced SSL support, and centralizes secure SMTP client code.
+
+- date: 2021-05-27
+  category: Release
+  title: C++ SMTP Client Library 1.1.2
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: Refactors SmtpClient to inherit from SmtpClientBase and replaces getServerReply with getCommunicationLog.
+
+- date: 2021-05-06
+  category: Release
+  title: C++ SMTP Client Library 1.1.1
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: Adds support for cc and bcc fields in sendMail.
+
+- date: 2021-03-28
+  category: Release
+  title: TeacherHelper 1.1.0
+  project: TeacherHelper
+  url: https://github.com/jeremydumais/TeacherHelper
+  summary: Enforces referential integrity, adds database upgrades, adds the first report, improves forms, and fixes compilation warnings.
+
+- date: 2021-01-16
+  category: Release
+  title: The Warrior 0.1.0
+  project: The Warrior
+  url: https://github.com/jeremydumais/TheWarrior
+  summary: First game application steps, modern OpenGL map display, player rendering, resize support, FPS display, and early map editing.

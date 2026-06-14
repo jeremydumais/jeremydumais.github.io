@@ -1,0 +1,41 @@
+{% assign news_items = site.data.news %}
+{% assign news_limit = include.limit | default: news_items.size %}
+
+<div class="news-timeline{% if include.compact %} news-timeline--compact{% endif %}">
+  {% for item in news_items limit: news_limit %}
+    <article class="news-card">
+      <div class="news-card__date">
+        <span class="news-card__month">{{ item.date | date: "%b" }}</span>
+        <span class="news-card__day">{{ item.date | date: "%-d" }}</span>
+        <span class="news-card__year">{{ item.date | date: "%Y" }}</span>
+      </div>
+      <div class="news-card__body">
+        <div class="news-card__meta">
+          <span class="pill">{{ item.category }}</span>
+          {% if item.project %}
+            <span>{{ item.project }}</span>
+          {% endif %}
+        </div>
+        <h3 class="news-card__title">
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        </h3>
+        <p>{{ item.summary }}</p>
+
+        {% unless include.compact %}
+          {% if item.details %}
+            <div class="news-card__details">
+              {% for group in item.details %}
+                <h4>{{ group.title }}</h4>
+                <ul>
+                  {% for detail in group.items %}
+                    <li>{{ detail }}</li>
+                  {% endfor %}
+                </ul>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endunless %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
