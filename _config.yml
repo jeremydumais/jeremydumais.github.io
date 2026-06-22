@@ -31,11 +31,9 @@ linkedin_username: jeremy-dumais
 
 # Build settings
 
-# theme: minima
-remote_theme: "jekyll/minima"
+theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
   - jemoji
 
 minima:
