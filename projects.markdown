@@ -1,100 +1,84 @@
 ---
 layout: page
-title: Projects (FOSS)
+title: Open-source projects
 permalink: /projects/
 ---
 
-### C++ SMTP Client Library <img src="/assets/cpplogo.png" style="margin-left:10px" title="C++" />
+<header class="projects-intro">
+  <span>FREE / OPEN / USEFUL</span>
+  <p>Libraries, tools, and experiments built to solve practical problems—and shared so the next developer can use them, learn from them, or make them better.</p>
+</header>
 
-C++ SMTP Client Library is a simple SMTP client library built in C++ that support authentication and TLS 1.3 encryption.
+<section class="featured-project featured-project--smtp">
+  <div class="featured-project__visual">
+    <span class="project-number">01 / FLAGSHIP</span>
+    <div class="project-emblem"><img src="/assets/cpp-logo-large.png" alt="C++"><i></i></div>
+    <small>C++ · SMTP · TLS 1.3</small>
+  </div>
+  <div class="featured-project__body">
+    <div class="project-meta"><span>LIBRARY</span><span>ACTIVELY MAINTAINED</span></div>
+    <h2>C++ SMTP<br>Client Library</h2>
+    <p>A lightweight and robust SMTP client with authentication, TLS 1.3 encryption, MIME attachments, and a well-tested API—all without a thicket of dependencies.</p>
+    <div class="featured-project__features"><span>TLS 1.3</span><span>MIME</span><span>Unit tested</span></div>
+    <blockquote>Send email from your software with a focused library that is easy to integrate.</blockquote>
+    <a class="project-link" href="https://github.com/{{ site.github_username }}/CPP-SMTPClient-library" target="_blank" rel="noopener">Explore the repository <b>↗</b></a>
+  </div>
+</section>
 
-<blockquote>
-I wanted to provide a way where you can send email from your software without having to rely on a lot of dependencies.
-</blockquote>
+<section class="featured-project featured-project--warrior featured-project--reverse">
+  <div class="featured-project__visual">
+    <span class="project-number">02 / FLAGSHIP</span>
+    <div class="project-emblem project-emblem--warrior"><img src="/assets/the-warrior-logo.png" alt="The Warrior"><i></i></div>
+    <small>C++ · SDL2 · RPG</small>
+  </div>
+  <div class="featured-project__body">
+    <div class="project-meta"><span>GAME</span><span>VERSION 0.6.0</span></div>
+    <h2>The<br>Warrior</h2>
+    <p>An RPG and world-building project with its own rendering engine, two playable maps, character and inventory systems, and dedicated map, item, and monster editors.</p>
+    <div class="featured-project__features"><span>World editors</span><span>Battle system</span><span>Basic NPCs</span></div>
+    <blockquote>Version 0.7.0 will bring the world further to life with player interactions for NPCs.</blockquote>
+    <a class="project-link" href="https://github.com/{{ site.github_username }}/TheWarrior" target="_blank" rel="noopener">Explore the repository <b>↗</b></a>
+  </div>
+</section>
 
-It is really easy to integrate the library to your existing projects. It is lightweight, robust and supported by a bunch of unit test.
+<div class="project-grid">
+  <article class="project-card">
+    <header><span>03 / TERMINAL TOOL</span><img src="/assets/rustlogo.png" alt="Rust"></header>
+    <div class="project-card__status"><i></i> Linux CLI</div>
+    <h2>BeaverTodos</h2>
+    <p>A focused terminal task manager written in Rust that keeps your work close to the command line.</p>
+    <ul><li>Add, edit, remove, and complete tasks</li><li>Sort by priority or creation time</li><li>Fetch exactly the next task to tackle</li></ul>
+    <a class="project-link" href="https://github.com/{{ site.github_username }}/BeaverTodos" target="_blank" rel="noopener">View on GitHub <b>↗</b></a>
+  </article>
 
-<a rel="me" href="https://github.com/{{ site.github_username }}/CPP-SMTPClient-library" target="_blank" title="{{ site.github_username }}/CPP-SMTPClient-library">
-    More details on Github
-    <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
-</a>
+  <article class="project-card">
+    <header><span>04 / LIBRARY</span><img src="/assets/cpplogo.png" alt="C++"></header>
+    <div class="project-card__status"><i></i> Lightweight</div>
+    <h2>C++ DateTime</h2>
+    <p>A small date and time library for C++ that avoids the complexity of a large framework.</p>
+    <ul><li><code>datetime</code> for points in time</li><li><code>timespan</code> for durations</li><li>Simple integration and unit tested</li></ul>
+    <a class="project-link" href="https://github.com/{{ site.github_username }}/CPP-DateTime-library" target="_blank" rel="noopener">View on GitHub <b>↗</b></a>
+  </article>
 
-### The Warrior <img src="/assets/cpplogo.png" style="margin-left:10px" title="C++" />
+  <article class="project-card">
+    <header><span>05 / APPLICATION</span><img src="/assets/cpplogo.png" alt="C++"></header>
+    <div class="project-card__status"><i></i> Education</div>
+    <h2>TeacherHelper</h2>
+    <p>A configurable application that helps teachers enter, follow, and understand student performance.</p>
+    <ul><li>Schools, classes, and students</li><li>Tests, subjects, and result tracking</li><li>Reports and performance statistics</li></ul>
+    <a class="project-link" href="https://github.com/{{ site.github_username }}/TeacherHelper" target="_blank" rel="noopener">View on GitHub <b>↗</b></a>
+  </article>
 
-An RPG game developped in C++ with SDL2.
+  <article class="project-card project-card--wide">
+    <header><span>06 / LEARNING LAB</span><img src="/assets/gologo.png" alt="Go"></header>
+    <div class="project-card__status"><i></i> Computer science fundamentals</div>
+    <h2>Computer Science Roadmap</h2>
+    <p>A hands-on challenge to revisit core computer-science concepts through the <a href="https://roadmap.sh/computer-science/" target="_blank" rel="noopener">roadmap.sh curriculum</a>—with every possible concept implemented as a practical way to learn Go.</p>
+    <a class="project-link" href="https://github.com/{{ site.github_username }}/Study_RoadMap_ComputerScience" target="_blank" rel="noopener">View on GitHub <b>↗</b></a>
+  </article>
+</div>
 
-Still in development...
-
-The current version 0.3.3 include
-- the game rendering engine with 2 basic maps
-- a Map Editor
-- an Item Editor
-- a Monster Editor
-- the player inventory
-- the player character panel
-
-The version 0.3.4 currently in development will include the game battle system.
-
-<a rel="me" href="https://github.com/{{ site.github_username }}/TheWarrior" target="_blank" title="{{ site.github_username }}/TheWarrior">
-    More details on Github
-    <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
-</a>
-
-### BeaverTodos <img src="/assets/rustlogo.png" style="margin-left:10px" title="Rust" />
-
-A Linux terminal todo list application written in Rust
-
-You can of course add, edit and remove todos but also print them in priority order, creation time, fetch only the next todo to work on etc.
-
-<a rel="me" href="https://github.com/{{ site.github_username }}/BeaverTodos" target="_blank" title="{{ site.github_username }}/BeaverTodos">
-    More details on Github
-    <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
-</a>
-
-### C++ DateTime Library <img src="/assets/cpplogo.png" style="margin-left:10px" title="C++" />
-
-C++ DateTime Library is a lightweight librairy built in C++ to manage dates and time.
-
-<blockquote>
-I wanted to offer a simple way to manage dates and time in C++ without having to deal with a complex framwork.
-</blockquote>
-
-The library contain 2 classes : datetime et timespan. The timespan class makes it possible to represent a duration of time which can be returned for example by making the subtraction of 2 dates. The library is really easy to integrate into your existing projects and is supported by a good amount of unit tests.
-
-<a rel="me" href="https://github.com/{{ site.github_username }}/CPP-DateTime-library" target="_blank" title="{{ site.github_username }}/CPP-DateTime-library">
-    More details on Github
-    <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
-</a>
-
-### TeacherHelper <img src="/assets/cpplogo.png" style="margin-left:10px" title="C++" />
-
-Teacher Helper is software for teachers to tracks student performance. The idea came from my wife, who is a primary school teacher.
-
-This software allows student's results to be entered and followed up via various reports and statistics.
-
-Everything is configurable: schools, classes, students, test types, subjects etc.
-
-<a rel="me" href="https://github.com/{{ site.github_username }}/TeacherHelper" target="_blank" title="{{ site.github_username }}/TeacherHelper">
-    More details on Github
-    <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
-</a>
-
-### Challenge 2023 - RoadMap of Computer Science <img src="/assets/gologo.png" style="margin-left:10px" title="Go" />
-
-I gave myself a challenge in 2023. I will review/learn and practice different
-concepts by following the https://roadmap.sh/computer-science/
-
-I will investigate and implement each concept contained in the road map when
-possible.
-
-To add a little spice I will take the opportunity to learn the GO language.
-
-<a rel="me" href="https://github.com/{{ site.github_username }}/Study_RoadMap_ComputerScience" target="_blank" title="{{ site.github_username }}/Study_RoadMap_ComputerScience">
-    More details on Github
-    <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
-</a>
-
-#### and more...
-
-See my github to the complete list of projects :
-<a href="https://github.com/jeremydumais" target="_blank">https://github.com/jeremydumais</a>
+<section class="projects-archive">
+  <div><span>THE REST OF THE WORKSHOP</span><h2>More code.<br>More experiments.</h2></div>
+  <a class="button-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">Browse every repository <span>↗</span></a>
+</section>

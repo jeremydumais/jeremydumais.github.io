@@ -1,8 +1,123 @@
+- date: 2026-06-21
+  category: Release
+  title: C++ SMTP Client Library 1.1.14
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: Fixes several stability issues, including authentication crashes, connection-loss handling, a memory leak, and Alpine Linux build compatibility. Also adds support for configuring the EHLO domain used during SMTP communication.
+  details:
+    - title: Bug fixes
+      items:
+        - Fixed an endless recursion issue in batch mode when the SMTP server connection was lost during a send operation.
+        - Fixed a crash during authentication when no compatible authentication protocol was found by the SMTP server.
+        - Fixed a missing stdint.h include that prevented the library from building on musl-based Linux distributions such as Alpine Linux.
+        - Fixed a small memory leak in SMTPClientBase::extractAuthenticationOptions() that could occur while parsing SMTP server authentication capabilities from the EHLO response.
+    - title: Enhancements
+      items:
+        - Added support for configuring the domain used in the EHLO command instead of always using localhost.
+
 - date: 2026-06-14
   category: Blog
   title: Azure Function - Accessing a Local API with Hybrid Connections on Linux
   url: /azure/2026/06/14/Azure-Function-HCM-Linux.html
   summary: A new walkthrough on using Azure Hybrid Connections to let a Linux Azure Function reach a private local API.
+
+- date: 2026-05-10
+  category: Release
+  title: The Warrior 0.6.0
+  project: The Warrior
+  url: https://github.com/jeremydumais/TheWarrior
+  summary: Adds NPC support to the Map Editor and displays NPCs in the game at their spawn locations.
+  details:
+    - title: Map Editor 1.4.0
+      items:
+        - Add NPC management to the editor.
+        - Allow NPCs to be shown or hidden on the map.
+        - Persist NPCs in the map file.
+        - Revamp the View main menu.
+    - title: Game
+      items:
+        - Display NPCs on the map at their spawn locations.
+
+- date: 2025-12-28
+  category: Release
+  title: The Warrior 0.5.0
+  project: The Warrior
+  url: https://github.com/jeremydumais/TheWarrior
+  summary: Adds save/load functionality, refreshes menu visuals, and fixes menu positioning, text alignment, and Message Pipeline scaling issues.
+  details:
+    - title: Game
+      items:
+        - Add save and load game functionality.
+        - Rework the visuals of the New Game and Load Game menus.
+    - title: Bug fixes
+      items:
+        - Fix an issue where main menu text elements were incorrectly positioned after returning from the game.
+        - Fix text misalignment in the game menu when resizing the window while the menu was visible.
+        - Fix the scale property not being applied correctly in the Message Pipeline.
+
+- date: 2025-11-01
+  category: Release
+  title: C++ SMTP Client Library 1.1.13
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: Fixes non-transitive OpenSSL include paths on Windows by properly exposing dependency include paths to consumers.
+  details:
+    - title: Bug fixes
+      items:
+        - Fix non-transitive include paths for the OpenSSL dependency when building on Windows.
+        - Use target_include_directories() instead of include_directories() to properly expose dependency include paths to consumers during build.
+
+- date: 2025-10-23
+  category: Release
+  title: C++ SMTP Client Library 1.1.12
+  project: C++ SMTP Client Library
+  url: https://github.com/jeremydumais/CPP-SMTPClient-library
+  summary: Improves multipart boundary generation, fixes CMake install paths, and adds generated Message-ID headers.
+  details:
+    - title: Enhancements
+      items:
+        - The default --sep multipart encapsulation boundary is now a randomly generated string to avoid conflicts when the separator appears in the email body. See RFC 1341 section 7.2.1. This change was made by ino-josh. Many thanks!
+        - Add a generated Message-ID header when sending a message. See RFC 5322 section 3.6.4. Thanks to PowerTAMX for reporting this.
+    - title: Bug fixes
+      items:
+        - Fix CMake install paths to prevent build path leakage in generated config files. When using default build values, the library output file no longer appears in an smtpclient folder, but one level above. This change was made by ino-josh. Many thanks!
+
+- date: 2025-09-13
+  category: Release
+  title: The Warrior 0.4.0
+  project: The Warrior
+  url: https://github.com/jeremydumais/TheWarrior
+  summary: Adds in-game popup menu actions and introduces the main menu screen with New Game and Quit flows.
+  details:
+    - title: Game
+      items:
+        - Add an Exit Game choice to the in-game popup menu.
+        - Add a Save choice to the in-game popup menu.
+        - Create the main menu screen and implement the New Game flow with player-name selection.
+        - Add the Quit action to the main menu.
+
+- date: 2025-07-30
+  category: Release
+  title: The Warrior 0.3.4
+  project: The Warrior
+  url: https://github.com/jeremydumais/TheWarrior
+  summary: Adds battle encounters and damage systems, optimizes visible-tile rendering, and updates monster and map editor behavior.
+  details:
+    - title: Game
+      items:
+        - Add the battle system and monster encounters.
+        - Support Fight and Run action items.
+        - Add the damage system for players and monsters.
+    - title: Optimization
+      items:
+        - Process and display only the tiles visible on screen with OpenGL.
+    - title: Monster Editor 1.0.2
+      items:
+        - Add Experience range fields for monsters.
+        - Change monster health from a single value to a range.
+    - title: Map Editor 1.3.5
+      items:
+        - Ensure that at least one monster encounter has a ratio of Normal.
 
 - date: 2025-07-23
   category: Release
